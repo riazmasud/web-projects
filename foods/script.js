@@ -1,7 +1,13 @@
-document.querySelector(".menu").addEventListener("click", () => {
+const menuBtn = document.querySelector(".menu");
+const primaryNav = document.getElementById("primary-navigation");
+
+menuBtn.addEventListener("click", () => {
   document.querySelectorAll(".target").forEach((item) => {
     item.classList.toggle("change");
   });
+  const expanded = menuBtn.classList.contains("change");
+  menuBtn.setAttribute("aria-expanded", String(expanded));
+  primaryNav.toggleAttribute("inert", !expanded);
 });
 
 const icons = document.querySelectorAll(".section-1-icons i");

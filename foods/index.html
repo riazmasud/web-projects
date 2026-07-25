@@ -12,29 +12,35 @@
   </head>
   <body>
     <!-- Navbar  -->
-    <nav class="navbar target">
-      <a href="#" class="navbar-link">
-        <i class="fas fa-home"></i>
+    <button
+      type="button"
+      class="menu target"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+    ></button>
+    <nav class="navbar target" id="primary-navigation" inert>
+      <a href="#" class="navbar-link" aria-disabled="true">
+        <i class="fas fa-home" aria-hidden="true"></i>
         <span>Home</span>
       </a>
-      <a href="#" class="navbar-link">
-        <i class="fas fa-utensils"></i>
+      <a href="#" class="navbar-link" aria-disabled="true">
+        <i class="fas fa-utensils" aria-hidden="true"></i>
         <span>Meals</span>
       </a>
-      <a href="#" class="navbar-link">
-        <i class="fas fa-hamburger"></i>
+      <a href="#" class="navbar-link" aria-disabled="true">
+        <i class="fas fa-hamburger" aria-hidden="true"></i>
         <span>Burger</span>
       </a>
-      <a href="#" class="navbar-link">
-        <i class="fas fa-pizza-slice"></i>
+      <a href="#" class="navbar-link" aria-disabled="true">
+        <i class="fas fa-pizza-slice" aria-hidden="true"></i>
         <span>Pizza</span>
       </a>
-      <a href="#" class="navbar-link">
-        <i class="fas fa-blender-phone"></i>
+      <a href="#" class="navbar-link" aria-disabled="true">
+        <i class="fas fa-blender-phone" aria-hidden="true"></i>
         <span>Contact</span>
       </a>
     </nav>
-    <div class="menu target"></div>
     <!-- End of Navbar  -->
 
     <div class="container">
@@ -57,20 +63,20 @@
       <!-- End of Section 1 -->
       <!-- Section 2 -->
       <section class="section-2">
-        <h1 class="section-heading">popular meals</h1>
+        <h2 class="section-heading">popular meals</h2>
         <div class="cards-container">
           <div class="card">
-            <img src="images/card-img-1.png" class="card-img" />
+            <img src="images/card-img-1.png" class="card-img" alt="" />
             <h3 class="card-name">Fish</h3>
             <button class="card-btn">Order now</button>
           </div>
           <div class="card">
-            <img src="images/card-img-2.png" class="card-img" />
+            <img src="images/card-img-2.png" class="card-img" alt="" />
             <h3 class="card-name">Cake</h3>
             <button class="card-btn">Order now</button>
           </div>
           <div class="card">
-            <img src="images/card-img-3.png" class="card-img" />
+            <img src="images/card-img-3.png" class="card-img" alt="" />
             <h3 class="card-name">Lobster</h3>
             <button class="card-btn">Order now</button>
           </div>
@@ -79,52 +85,52 @@
       <!-- End of Section 2 -->
       <!-- Section 3 -->
       <section class="section-3">
-        <h1 class="section-heading">gallery</h1>
+        <h2 class="section-heading">gallery</h2>
         <div class="gallery">
-          <a href="#" class="gallery-link" title="Order Now">
-            <img src="images/gallery-img-1.jpg" class="food-img" />
+          <a href="#" class="gallery-link" title="Order Now" aria-disabled="true">
+            <img src="images/gallery-img-1.jpg" class="food-img" alt="" />
             <h3 class="food-name">Pancakes</h3>
-            <p class="food-description">
+            <p class="food-description" aria-hidden="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               commodi possimus iure hic excepturi. Corporis!
             </p>
           </a>
-          <a href="#" class="gallery-link" title="Order Now">
-            <img src="images/gallery-img-2.jpg" class="food-img" />
+          <a href="#" class="gallery-link" title="Order Now" aria-disabled="true">
+            <img src="images/gallery-img-2.jpg" class="food-img" alt="" />
             <h3 class="food-name">Cupcakes</h3>
-            <p class="food-description">
+            <p class="food-description" aria-hidden="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               commodi possimus iure hic excepturi. Corporis!
             </p>
           </a>
-          <a href="#" class="gallery-link" title="Order Now">
-            <img src="images/gallery-img-3.jpg" class="food-img" />
+          <a href="#" class="gallery-link" title="Order Now" aria-disabled="true">
+            <img src="images/gallery-img-3.jpg" class="food-img" alt="" />
             <h3 class="food-name">Hummus</h3>
-            <p class="food-description">
+            <p class="food-description" aria-hidden="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               commodi possimus iure hic excepturi. Corporis!
             </p>
           </a>
-          <a href="#" class="gallery-link" title="Order Now">
-            <img src="images/gallery-img-4.jpg" class="food-img" />
+          <a href="#" class="gallery-link" title="Order Now" aria-disabled="true">
+            <img src="images/gallery-img-4.jpg" class="food-img" alt="" />
             <h3 class="food-name">Hamburger</h3>
-            <p class="food-description">
+            <p class="food-description" aria-hidden="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               commodi possimus iure hic excepturi. Corporis!
             </p>
           </a>
-          <a href="#" class="gallery-link" title="Order Now">
-            <img src="images/gallery-img-5.jpg" class="food-img" />
+          <a href="#" class="gallery-link" title="Order Now" aria-disabled="true">
+            <img src="images/gallery-img-5.jpg" class="food-img" alt="" />
             <h3 class="food-name">Salmon</h3>
-            <p class="food-description">
+            <p class="food-description" aria-hidden="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               commodi possimus iure hic excepturi. Corporis!
             </p>
           </a>
-          <a href="#" class="gallery-link" title="Order Now">
-            <img src="images/gallery-img-6.jpg" class="food-img" />
+          <a href="#" class="gallery-link" title="Order Now" aria-disabled="true">
+            <img src="images/gallery-img-6.jpg" class="food-img" alt="" />
             <h3 class="food-name">Vegetables</h3>
-            <p class="food-description">
+            <p class="food-description" aria-hidden="true">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               commodi possimus iure hic excepturi. Corporis!
             </p>
@@ -142,13 +148,19 @@
           </p>
         </div>
         <form class="signup-form">
+          <label for="signup-email" class="sr-only">Email address</label>
           <input
+            id="signup-email"
             type="email"
             class="signup-form-input"
             placeholder="Enter Your Email"
           />
-          <button type="submit" class="signup-form-btn">
-            <i class="fas fa-arrow-right"></i>
+          <button
+            type="submit"
+            class="signup-form-btn"
+            aria-label="Submit email signup"
+          >
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </button>
         </form>
         <p class="copyright">RiazMasud Demo &copy; All rights reserved</p>
