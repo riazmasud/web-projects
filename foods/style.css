@@ -603,3 +603,38 @@ html {
   }
 }
 /* End of Responsive */
+
+/* Portfolio Scroller */
+.portfolio-scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #111;
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+.portfolio-scroller__track {
+  display: inline-flex;
+  gap: 4rem;
+  animation: portfolio-scroll 18s linear infinite;
+}
+
+.portfolio-scroller__track span {
+  padding-inline: 2rem;
+}
+
+@keyframes portfolio-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-scroller__track {
+    animation: none;
+  }
+}
