@@ -4,8 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - "tailwind-react/**"
-      - "!tailwind-react/dist/**"
+      - "tailwind-react/app/**"
+      - "tailwind-react/package.json"
+      - "tailwind-react/package-lock.json"
+      - "tailwind-react/vite.config.js"
+      - ".github/workflows/deploy-tailwind-react.yml"
 
 permissions:
   contents: write
@@ -34,7 +37,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f tailwind-react/dist
+          git add -A tailwind-react
           git diff --cached --quiet && exit 0
           git commit -m "Build tailwind-react [skip ci]"
           git push
