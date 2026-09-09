@@ -209,7 +209,7 @@ footer {
 
 .cta-button {
   display: inline-block;
-  width: 160px;
+  width: 200px;
   text-align: center;
   background: var(--color-primary);
   color: white;
@@ -256,5 +256,9 @@ footer {
 
   section.contact .form-row {
     width: 90%;
+  }
+
+  .cta-button {
+    width: auto;
   }
 }
