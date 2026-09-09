@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developers Portfolio Template</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Riaz.dev</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about" id="about">
+      <img src="assets/riaz-photo.jpg" alt="Riaz Masud" />
+      <div>
+        <h2>Hi, I'm Riaz — front-end developer</h2>
+        <p>
+          I build clean, responsive web interfaces with a strong eye for detail.
+        </p>
+        <button class="cta-button">Download resume</button>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h3>Skills</h3>
+      <div>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Flexbox</span>
+        <span>Grid</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h3>Projects</h3>
+      <div class="card-grid">
+        <div>
+          <div class="card">
+            <div class="thumb"><span>FL</span></div>
+            <div class="content">
+              <h4>Flowly Landing Page</h4>
+              <p>Responsive Saas landing page</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="thumb"><span>WA</span></div>
+            <div class="content">
+              <h4>Weather App UI</h4>
+              <p>Clean forecast dashboard</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="thumb"><span>RB</span></div>
+            <div class="content">
+              <h4>Recipe Blog Layout</h4>
+              <p>Content-focused article grid</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h4>Get in touch</h4>
+      <form
+        action="mailto:masud.riaz@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <div class="form-row">
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              placeholder="Jane Smith"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="Email"
+              placeholder="jane@company.com"
+              required
+            />
+          </div>
+          <textarea
+            id="message"
+            name="Message"
+            placeholder="What are you working on?"
+            required
+          ></textarea>
+        </div>
+
+        <button class="cta-button" type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <span>© <span id="year"></span> Riaz Masud</span>
+      <div class="footer-links">
+        <a href="https://github.com/riazmasud" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/riaz-masud-2a765819"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
