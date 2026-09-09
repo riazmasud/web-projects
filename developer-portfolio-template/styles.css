@@ -208,7 +208,9 @@ footer {
 }
 
 .cta-button {
+  display: inline-block;
   width: 160px;
+  text-align: center;
   background: var(--color-primary);
   color: white;
   border: none;

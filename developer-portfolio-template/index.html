@@ -25,7 +25,9 @@
         <p>
           I build clean, responsive web interfaces with a strong eye for detail.
         </p>
-        <button class="cta-button">Download resume</button>
+        <a class="cta-button" href="assets/riaz-masud-resume.pdf" download
+          >Download resume</a
+        >
       </div>
     </section>
     <section class="skills" id="skills">
@@ -122,5 +124,8 @@
         >
       </div>
     </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
